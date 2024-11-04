@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    color: #333;
+    background-color: #fef2f2;
+}
+
+.navbar {
+    background-color: rgba(255, 182, 193, 0.8);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #4b2b2b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    background: url('images/banner07.png') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding-top: 60px;
+}
+
+.banner.small-banner {
+    height: 40vh;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner-text {
+    position: relative;
+    z-index: 1;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.banner p {
+    font-size: 1.2rem;
+}
+
+.content {
+    padding: 2rem;
+    padding-bottom: 4rem;
+    color: #4b2b2b;
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.discord-invite {
+    display: inline-block;
+    background-color: #7289da;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.discord-invite:hover {
+    background-color: #5b6eae;
+}
+
+.github-invite {
+    display: inline-block;
+    background-color: #57606a;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.github-invite:hover {
+    background-color: #57606a;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffe4e4;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 4rem;
+}
+
+.join-banner {
+    background: url('images/banner05.png') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding-top: 60px;
+}
+
+.join-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 10;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.join-banner .banner-text {
+    padding: 1rem;
+    text-align: center;
+}
+
+.about-banner {
+    background: url('images/banner02.png') no-repeat center center/cover;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+}
+
+.about-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.about-banner .banner-text {
+    position: relative;
+    z-index: 1;
+}
+
+.about-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-banner p {
+    font-size: 1.2rem;
+}
+
+.donation-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.donate-button {
+    background-color: #ff4c4c;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin: 10px 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.donate-button i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.donate-button:hover {
+    background-color: #d43d3d;
+    transform: scale(1.05); 
+}
